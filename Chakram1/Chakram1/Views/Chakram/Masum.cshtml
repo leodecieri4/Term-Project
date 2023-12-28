@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Top 10 Players of All Time List</title>
+    <style>
+        body {
+            background-image: url('/resimler/icardi 1.jpg'); 
+            color: #fff; 
+            font-family: 'Times New Roman', Times, serif; 
+            text-align: center;
+            padding-top: 50px;
+            font-size: 20px; 
+        }
+
+        h1 {
+            color: #fff; 
+            font-size: 70px; 
+        }
+
+        .list-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center; 
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: #fff; 
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+        }
+
+        ol {
+           
+            list-style-type: none; 
+            counter-reset: my-counter; 
+            padding: 0;
+        }
+
+            ol li {
+                counter-increment: my-counter; 
+                margin-bottom: 10px;
+                text-align: left; 
+            }
+
+                ol li::before {
+                    content: counter(my-counter) ". "; 
+                    font-weight: bold;
+                }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Top 10 Players of All Time List</h1>
+    <div class="list-container">
+        <p>Here you'll find the list of the top 10 players of all time.</p>
+        <p>But before you go; You must know this list is very personal and it's all my opinion.</p>
+        <p>Some players are really old or resting in peace right now.</p>
+        <p>Because of this situation, I couldn't really find the true goal/assist numbers.</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <p>Feel free to explore more about each player's achievements and impact on the sport!        
+            <a asp-controller="Chakram" asp-action="Index" class="btn btn-primary" style="color: Blue;">Get me to the list!</a>    </p>
+    </div>
+</body>
+</html>

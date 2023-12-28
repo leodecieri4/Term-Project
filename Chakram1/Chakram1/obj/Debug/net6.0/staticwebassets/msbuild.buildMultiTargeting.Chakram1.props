@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Chakram1.props" />
+</Project>

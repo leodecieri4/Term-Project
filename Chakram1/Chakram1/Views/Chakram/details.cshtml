@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px; 
+        }
+
+        .product-details {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            float: left;
+            margin-right: 20px;
+            object-fit: contain;
+        }
+
+        .other-content {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <img src="@Model.foto_2" class="product-image" alt="@Model.Name" />
+        <h2>@Model.Name @Model.Surname</h2>
+        <p>@Model.Id</p>
+        <div class="other-content">
+            @Model.details;
+            <br /> <br />
+            @Html.ActionLink("Back to List", "Index", "Chakram")
+        </div>
+    </div>
+</body>
+</html>
